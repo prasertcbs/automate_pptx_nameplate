@@ -43,7 +43,6 @@ def mecard(name, tel, email):
 
 def gen_qrcode(text, logo_file=None, logo_pos='c'):
     qr = qrcode.QRCode(
-        # About 30% or less errors can be corrected.
         error_correction=qrcode.constants.ERROR_CORRECT_M,
         border=1 # 10px
     )
